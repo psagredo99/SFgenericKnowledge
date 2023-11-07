@@ -1,0 +1,2 @@
+# SFgenericKnowledge
+Salesforce generic knowledge
