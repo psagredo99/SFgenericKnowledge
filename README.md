@@ -46,3 +46,30 @@ while (res.getStatusCode() == 302) {
     res = new Http().send(req);
 }
 ```
+
+
+# Send public images in email
+
+-We can add public and working images from email using ContentVersion and ContentDistribution
+
+```bash
+ContentVersion contentVersionRec = new ContentVersion();
+contentVersionRec.Title = fileName;
+contentVersionRec.PathOnClient = '/' + fileName;
+contentVersionRec.FirstPublishLocationId = contactRec.Id;
+contentVersionRec.VersionData = EncodingUtil.base64Decode(base64File);
+contentVersionRec.IsMajorVersion = true;
+Insert contentVersionRec;
+//update public link on Task
+ContentDistribution cdl = new ContentDistribution();
+cdl.ContentVersionId = contentVersionRec.Id;
+cdl.Name = fileName;
+cdl.PreferencesAllowViewInBrowser= true;
+
+insert cdl;
+  
+ContentDistribution cd = [SELECT DistributionPublicUrl 
+                           FROM ContentDistribution 
+                           WHERE Id =: cdl.Id 
+                           LIMIT 1];
+```
