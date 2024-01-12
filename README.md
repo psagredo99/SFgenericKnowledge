@@ -73,3 +73,15 @@ ContentDistribution cd = [SELECT DistributionPublicUrl
                            WHERE Id =: cdl.Id 
                            LIMIT 1];
 ```
+
+# Test a SOAP API - aka sf webservice
+
+We need 2 wsdl files:
+-Generic wsdl class to populate login where we need username, password+token (we must append token to end of password).
+-Specific class to be test 
+
+Import both files to SOAP UI, first we need to generate auth token based on login.After we select the ws to be tested and select correct method (GET,POST etc) And send the xml file body and remove the headers as they are not needed.
+
+![image](https://github.com/psagredo99/SFgenericKnowledge/assets/72439144/cebec758-5578-46fa-8a07-3b4bd9f6b65b)
+
+
