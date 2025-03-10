@@ -85,3 +85,9 @@ Import both files to SOAP UI, first we need to generate auth token based on logi
 ![image](https://github.com/psagredo99/SFgenericKnowledge/assets/72439144/cebec758-5578-46fa-8a07-3b4bd9f6b65b)
 
 
+# Missing a license from Prod env
+
+In case we miss a license which is currently avalaible on prod env we just need to refresh licenses from Prod enviroment:
+![image](https://github.com/user-attachments/assets/6ed1ccfe-8a54-42c4-b5a1-7d27354f961d)
+
+
