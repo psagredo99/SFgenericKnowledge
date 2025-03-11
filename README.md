@@ -90,7 +90,7 @@ Import both files to SOAP UI, first we need to generate auth token based on logi
 In case we miss a license which is currently avalaible on prod env we just need to refresh licenses from Prod enviroment:
 ![image](https://github.com/user-attachments/assets/6ed1ccfe-8a54-42c4-b5a1-7d27354f961d)
 
-# Missing a license from Prod env
+# Matching files to storage usage
 
 Check where Storage/File usage is being filled 
 
