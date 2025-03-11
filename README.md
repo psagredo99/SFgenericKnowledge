@@ -90,4 +90,15 @@ Import both files to SOAP UI, first we need to generate auth token based on logi
 In case we miss a license which is currently avalaible on prod env we just need to refresh licenses from Prod enviroment:
 ![image](https://github.com/user-attachments/assets/6ed1ccfe-8a54-42c4-b5a1-7d27354f961d)
 
+# Missing a license from Prod env
 
+Check where Storage/File usage is being filled 
+
+Queries needed:
+https://trailhead.salesforce.com/es/trailblazer-community/feed/0D54S00000A7x1MSAR
+
+Create a report:
+https://www.simplysfdc.com/2018/05/salesforce-files-sharing-query.html#google_vignette
+
+Create and assign new permission set:
+https://help.salesforce.com/s/articleView?id=000381258&type=1
